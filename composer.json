@@ -1,0 +1,17 @@
+{
+    "name": "hudm\/aliyun-oss",
+    "description": "阿里云oss扩展包",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "HuDaming",
+            "email": "40834106@qq.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Hudm\\AliyunOss\\": "src"
+        }
+    }
+}
