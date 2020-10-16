@@ -22,7 +22,7 @@ class AliyunOssServiceProvider extends ServiceProvider
     {
         // 单例绑定服务
         $this->app->singleton(AliyunOss::class, function () {
-            return new AliyunOss();
+            return new AliyunOss(config('aliyun-oss'));
         });
 
         $this->app->alias(AliyunOss::class, 'aliyunOss');

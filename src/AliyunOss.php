@@ -25,7 +25,7 @@ class AliyunOss
      *
      * @var int
      */
-    protected $expire = 30;
+    protected $expire;
 
     public function __construct(array $config = [])
     {
@@ -37,6 +37,7 @@ class AliyunOss
 
         $this->callbackUrl = $config['callback_url'];
         $this->dir = $config['dir'];
+        $this->expire = $config['expire'];
     }
 
     public function getUploadPolicy()
